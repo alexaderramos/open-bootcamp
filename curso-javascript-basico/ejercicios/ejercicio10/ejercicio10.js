@@ -1,21 +1,21 @@
 class Estudiante {
-    nombre;
+    nombre = "Alexander";
 
-    lista;
+    lista = ["Javascript", "HTML", "CSS"];
 
-    constructor(nombre, lista) {
-        this.nombre = nombre;
-        this.lista = lista;
-    }
+
 
     obtenDatos() {
-        return `Nombre: ${this.nombre} - Lista: ${this.lista}`;
+        return {
+            nombre: this.nombre,
+            lista: this.lista
+        }
     }
 
 
 }
 
-let estudiante = new Estudiante("Juan", "A");
+let estudiante = new Estudiante();
 
 console.log('====================================');
 console.log(estudiante.obtenDatos());
